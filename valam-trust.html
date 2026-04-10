@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Valam Trust — Nurturing Prosperity, Transforming Lives across Tamil Nadu communities."/>
+  <title>Valam Trust — Nurturing Communities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yeseva+One&family=Nunito+Sans:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ───── NAV ───── -->
+<nav id="mainNav">
+  <a class="nav-logo" onclick="showPage('home')">
+    <span class="logo-accent">Valam</span> Trust
+    <span class="logo-sub"> Nurturing Prosperity</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a onclick="showPage('home')" data-page="home">Home</a></li>
+    <li><a onclick="showPage('about')" data-page="about">About</a></li>
+    <li><a onclick="showPage('work')" data-page="work">Our Work</a></li>
+    <li><a onclick="showPage('involved')" data-page="involved">Get Involved</a></li>
+    <li><a onclick="showPage('news')" data-page="news">News</a></li>
+    <li><a onclick="showPage('contact')" data-page="contact">Contact</a></li>
+    <li><a onclick="showPage('donate')" data-page="donate" class="nav-donate">❤ Donate</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HOME ═══════════════════════ -->
+<div class="page active" id="page-home">
+
+  <div class="hero">
+    <div class="hero-img"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Est. 2009 · Registered Trust · Tamil Nadu</div>
+      <h1>Growing <em>Prosperity,</em><br>Nurturing Every Life</h1>
+      <p class="hero-sub">Valam Trust works hand-in-hand with underserved communities across Tamil Nadu — ensuring every family has access to education, healthcare, and the opportunity to thrive.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" onclick="showPage('donate')">❤ Donate Now</a>
+        <a class="btn-ghost" onclick="showPage('work')">Explore Our Work →</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </div>
+
+  <!-- Impact Strip -->
+  <div class="impact-strip">
+    <div class="impact-item"><span class="impact-num" data-target="52000">0</span><div class="impact-label">Lives Impacted</div></div>
+    <div class="impact-item"><span class="impact-num" data-target="18">0</span><div class="impact-label">Districts Covered</div></div>
+    <div class="impact-item"><span class="impact-num" data-target="124">0</span><div class="impact-label">Active Projects</div></div>
+    <div class="impact-item"><span class="impact-num" data-target="2400">0</span><div class="impact-label">Volunteers</div></div>
+  </div>
+
+  <!-- Mission -->
+  <section class="section section-white">
+    <div class="mission-grid">
+      <div class="mission-img-wrap">
+        <img src="media/img_0.jpg" alt="Children learning in classroom" />
+        <div class="mission-badge">
+          <div class="mission-badge-num">15+</div>
+          <div class="mission-badge-text">Years of Service</div>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Our Mission</div>
+        <h2 class="section-heading">A Trust Built on<br><em>Human Dignity</em></h2>
+        <div class="divider-line"></div>
+        <p class="section-para">We believe every individual — regardless of where they were born — deserves the opportunity to flourish. Valam Trust partners <em>with</em> communities, not just for them, building lasting, self-sustaining change.</p>
+        <ul class="mission-features">
+          <li class="mission-feat"><div class="feat-icon"><img src="https://loremflickr.com/64/64/education" alt="Education" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"></div><div><div class="feat-title">Quality Education</div><div class="feat-desc">Bridging learning gaps for 20,000+ children through schools, digital classrooms, and tutoring networks.</div></div></li>
+          <li class="mission-feat"><div class="feat-icon"><img src="https://loremflickr.com/64/64/health" alt="Healthcare" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"></div><div><div class="feat-title">Community Healthcare</div><div class="feat-desc">Mobile clinics and health camps bringing primary care to 180+ remote villages every month.</div></div></li>
+          <li class="mission-feat"><div class="feat-icon"><img src="https://loremflickr.com/64/64/plant" alt="Environment" style="width:100%;height:100%;object-fit:cover;border-radius:10px;"></div><div><div class="feat-title">Sustainable Livelihoods</div><div class="feat-desc">Skill-building and microfinance programs creating 5,000+ sustainable jobs for rural families.</div></div></li>
+        </ul>
+        <br>
+        <a class="btn-green" onclick="showPage('about')">Learn Our Story →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section projects-section">
+    <div class="eyebrow">Active Campaigns</div>
+    <h2 class="section-heading">Projects Making a <em>Real Difference</em></h2>
+    <div class="divider-line"></div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-card-img">
+          <img src="media/img_7.jpg" alt="Digital classroom" />
+          <span class="proj-cat-badge">Education</span>
+        </div>
+        <div class="project-card-body">
+          <div class="proj-title">Digital Classrooms Initiative</div>
+          <div class="proj-desc">Equipping 200 government schools with tablets, internet, and trained instructors across rural Tamil Nadu.</div>
+          <div class="progress-wrap">
+            <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+            <div class="progress-meta"><span>₹39L raised</span><strong>78%</strong><span>₹50L goal</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-img">
+          <img src="media/img_9.jpg" alt="Healthcare camp" />
+          <span class="proj-cat-badge">Healthcare</span>
+        </div>
+        <div class="project-card-body">
+          <div class="proj-title">Maternal Health & Nutrition</div>
+          <div class="proj-desc">Pre/post-natal care and nutrition support for 3,000 mothers annually in underserved regions.</div>
+          <div class="progress-wrap">
+            <div class="progress-bar"><div class="progress-fill" style="width:60%"></div></div>
+            <div class="progress-meta"><span>₹18L raised</span><strong>60%</strong><span>₹30L goal</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-img">
+          <img src="media/img_21.jpg" alt="Clean water project" />
+          <span class="proj-cat-badge">Environment</span>
+        </div>
+        <div class="project-card-body">
+          <div class="proj-title">Clean Water for Villages</div>
+          <div class="proj-desc">Solar-powered water purification in 50 water-scarce villages — impacting 25,000 families directly.</div>
+          <div class="progress-wrap">
+            <div class="progress-bar"><div class="progress-fill" style="width:45%"></div></div>
+            <div class="progress-meta"><span>₹9L raised</span><strong>45%</strong><span>₹20L goal</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="section section-white">
+    <div style="text-align:center; max-width:560px; margin:0 auto 1rem;">
+      <div class="eyebrow" style="justify-content:center">Our Approach</div>
+      <h2 class="section-heading" style="text-align:center">How <em>Valam Trust</em> Works</h2>
+      <div class="divider-line" style="margin:1rem auto 0;"></div>
+    </div>
+    <br>
+    <div class="how-grid">
+      <div class="how-card"><div class="how-num">01</div><span class="how-icon"><img src="https://loremflickr.com/64/64/magnifier" alt="Identify Need" style="width:1em;height:1em;object-fit:cover;border-radius:50%;"></span><div class="how-title">Identify Need</div><div class="how-desc">We listen deeply to communities to identify root causes, not just symptoms.</div></div>
+      <div class="how-card"><div class="how-num">02</div><span class="how-icon"><img src="https://loremflickr.com/64/64/handshake" alt="Co-Design" style="width:1em;height:1em;object-fit:cover;border-radius:50%;"></span><div class="how-title">Co-Design</div><div class="how-desc">Solutions are built with local leaders ensuring ownership and cultural relevance.</div></div>
+      <div class="how-card"><div class="how-num">03</div><span class="how-icon"><img src="https://loremflickr.com/64/64/rocket" alt="Implement" style="width:1em;height:1em;object-fit:cover;border-radius:50%;"></span><div class="how-title">Implement</div><div class="how-desc">Our on-ground teams execute programs with rigorous monitoring and transparency.</div></div>
+      <div class="how-card"><div class="how-num">04</div><span class="how-icon"><img src="https://loremflickr.com/64/64/growth" alt="Measure" style="width:1em;height:1em;object-fit:cover;border-radius:50%;"></span><div class="how-title">Measure & Scale</div><div class="how-desc">Data-driven outcomes guide scaling and ensure every rupee creates maximum impact.</div></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials-section">
+    <div class="eyebrow eyebrow-light">Stories of Hope</div>
+    <h2 class="section-heading section-heading-light" style="margin-bottom:0.5rem">Voices from the <em>Community</em></h2>
+    <div class="divider-line" style="background:var(--amber); margin-bottom:2.5rem;"></div>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">"The digital classroom changed everything for my daughter. She now dreams of becoming an engineer — unimaginable two years ago."</div>
+        <div class="testi-author"><div class="testi-avatar"><img src="media/img_13.jpg" alt="Rathna"/></div><div><div class="testi-name">Rathna K.</div><div class="testi-role">Parent, Vellore District</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">"The mobile health camp caught my condition early. The doctors, medicines, and follow-up — all free. Valam Trust gave me more years with my family."</div>
+        <div class="testi-author"><div class="testi-avatar"><img src="media/img_8.jpg" alt="Murugan"/></div><div><div class="testi-name">Murugan P.</div><div class="testi-role">Beneficiary, Dharmapuri</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">"Volunteering here is the most meaningful thing I've done. The team is transparent, driven, and genuinely committed to the communities they serve."</div>
+        <div class="testi-author"><div class="testi-avatar"><img src="media/img_23.jpg" alt="Priya"/></div><div><div class="testi-name">Priya S.</div><div class="testi-role">Volunteer, Chennai</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <div class="partner-strip">
+    <div class="partner-label">Trusted Partners & Supporters</div>
+    <div class="partner-logos">
+      <div class="partner-name">NITI Aayog</div>
+      <div class="partner-name">NASSCOM Foundation</div>
+      <div class="partner-name">Tata Trusts</div>
+      <div class="partner-name">GiveIndia</div>
+      <div class="partner-name">UNICEF India</div>
+      <div class="partner-name">Tamil Nadu Govt.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<div class="page" id="page-about">
+  <div class="about-hero">
+    <div class="about-hero-img"></div>
+    <div class="about-hero-overlay"></div>
+    <div class="about-hero-content">
+      <div class="eyebrow eyebrow-light">Who We Are</div>
+      <h1 class="section-heading section-heading-light" style="font-size:clamp(2rem,4vw,3.5rem);">Fifteen Years of<br><em>Purpose-Driven</em> Action</h1>
+      <p class="section-para section-para-light" style="margin-bottom:0;">Founded in 2009, Valam Trust has grown from a small local initiative into one of Tamil Nadu's most trusted non-profits, serving 52,000+ lives across 18 districts.</p>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="eyebrow" style="justify-content:center; margin:0 auto 0.8rem;">Our Journey</div>
+    <h2 class="section-heading" style="text-align:center; margin-bottom:3rem;">History &amp; <em>Legacy</em></h2>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-year">2009</div><div style="position:relative"><div class="tl-dot"></div><div class="tl-body"><div class="tl-event">Foundation Established</div><div class="tl-desc">Valam Trust registered in Chennai by founder Anandhi Krishnamurthy with a vision to bridge the rural-urban opportunity gap across Tamil Nadu.</div></div></div></div>
+      <div class="tl-item"><div class="tl-year">2011</div><div style="position:relative"><div class="tl-dot"></div><div class="tl-body"><div class="tl-event">First Major Grant</div><div class="tl-desc">Received ₹25L seed grant from Tata Trusts, enabling launch of our first 10 community learning centres.</div></div></div></div>
+      <div class="tl-item"><div class="tl-year">2014</div><div style="position:relative"><div class="tl-dot"></div><div class="tl-body"><div class="tl-event">Healthcare Wing Launched</div><div class="tl-desc">Expanded scope to mobile health clinics and maternal care, initially covering 3 districts.</div></div></div></div>
+      <div class="tl-item"><div class="tl-year">2017</div><div style="position:relative"><div class="tl-dot"></div><div class="tl-body"><div class="tl-event">80G & FCRA Certification</div><div class="tl-desc">Achieved FCRA registration and 80G status, enabling international and tax-exempt domestic donations.</div></div></div></div>
+      <div class="tl-item"><div class="tl-year">2020</div><div style="position:relative"><div class="tl-dot"></div><div class="tl-body"><div class="tl-event">COVID Relief Operations</div><div class="tl-desc">Distributed 1.2L food kits and set up 8 oxygen support centres across Tamil Nadu during the pandemic.</div></div></div></div>
+      <div class="tl-item"><div class="tl-year">2024</div><div style="position:relative"><div class="tl-dot"></div><div class="tl-body"><div class="tl-event">52,000 Lives Milestone</div><div class="tl-desc">Celebrated 15 years of impact, crossing 52,000 direct beneficiaries and ₹12Cr total funds utilised.</div></div></div></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="eyebrow">Leadership</div>
+    <h2 class="section-heading" style="margin-bottom:2.5rem;">The People Behind <em>the Mission</em></h2>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-img"><img src="media/img_12.jpg" alt="Anandhi"/></div><div class="team-body"><div class="team-name">Anandhi Krishnamurthy</div><div class="team-role">Founder & CEO</div><div class="team-bio">Former IAS officer, 18 years in rural development. TEDx speaker and Forbes Social Entrepreneur awardee.</div></div></div>
+      <div class="team-card"><div class="team-img"><img src="media/img_33.jpg" alt="Dr Rajan"/></div><div class="team-body"><div class="team-name">Dr. Rajan Mehta</div><div class="team-role">Director, Healthcare</div><div class="team-bio">MBBS, MPH from AIIMS. Pioneered the mobile clinic model now replicated across 3 states.</div></div></div>
+      <div class="team-card"><div class="team-img"><img src="media/img_28.jpg" alt="Sowmya"/></div><div class="team-body"><div class="team-name">Sowmya Bhat</div><div class="team-role">Head of Programs</div><div class="team-bio">15 years in education policy. Previously with Pratham and Azim Premji Foundation.</div></div></div>
+      <div class="team-card"><div class="team-img"><img src="media/img_2.jpg" alt="Vikram"/></div><div class="team-body"><div class="team-name">Vikram Nair</div><div class="team-role">CFO & Compliance</div><div class="team-bio">CA with expertise in NGO governance, FCRA compliance, and social sector fund auditing.</div></div></div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="docs-grid">
+      <div>
+        <div class="eyebrow">Financial Transparency</div>
+        <h2 class="section-heading" style="margin-bottom:1rem;">Open <em>Books</em></h2>
+        <p class="section-para" style="margin-bottom:1.5rem; font-size:0.88rem;">We believe transparency is non-negotiable. All our financials and legal certificates are publicly accessible.</p>
+        <div class="doc-item"><div class="doc-icon-box"><img src="https://loremflickr.com/64/64/document" alt="Doc" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div><div><div class="doc-name">Annual Report 2023–24</div><div class="doc-size">PDF · 3.2 MB</div></div><div class="doc-dl">↓</div></div>
+        <div class="doc-item"><div class="doc-icon-box"><img src="https://loremflickr.com/64/64/chart" alt="Chart" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div><div><div class="doc-name">Audited Financials 2023</div><div class="doc-size">PDF · 1.8 MB</div></div><div class="doc-dl">↓</div></div>
+        <div class="doc-item"><div class="doc-icon-box"><img src="https://loremflickr.com/64/64/building" alt="Exemption" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div><div><div class="doc-name">80G Tax Exemption Certificate</div><div class="doc-size">PDF · 420 KB</div></div><div class="doc-dl">↓</div></div>
+        <div class="doc-item"><div class="doc-icon-box"><img src="https://loremflickr.com/64/64/globe" alt="Registration" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div><div><div class="doc-name">FCRA Registration</div><div class="doc-size">PDF · 310 KB</div></div><div class="doc-dl">↓</div></div>
+        <div class="doc-item"><div class="doc-icon-box"><img src="https://loremflickr.com/64/64/clipboard" alt="Certificate" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div><div><div class="doc-name">12A Registration Certificate</div><div class="doc-size">PDF · 290 KB</div></div><div class="doc-dl">↓</div></div>
+      </div>
+      <div>
+        <div class="eyebrow">Core Values</div>
+        <h2 class="section-heading" style="margin-bottom:1rem;">What We <em>Stand For</em></h2>
+        <div class="values-grid">
+          <div class="val-card"><div class="val-title"><img src="https://loremflickr.com/64/64/integrity" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Integrity</div><div class="val-text">We act honestly and hold ourselves accountable to donors, partners, and communities.</div></div>
+          <div class="val-card"><div class="val-title"><img src="https://loremflickr.com/64/64/transparent" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Transparency</div><div class="val-text">Every rupee is tracked, reported, and audited independently every year.</div></div>
+          <div class="val-card"><div class="val-title"><img src="https://loremflickr.com/64/64/compassion" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Compassion</div><div class="val-text">We lead with empathy, centring the dignity and agency of those we serve.</div></div>
+          <div class="val-card"><div class="val-title"><img src="https://loremflickr.com/64/64/sustainability" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Sustainability</div><div class="val-text">We build programs designed to thrive beyond our direct involvement.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ OUR WORK ═══════════════════════ -->
+<div class="page" id="page-work">
+  <div class="work-hero">
+    <div class="work-hero-img"></div>
+    <div class="work-hero-overlay"></div>
+    <div class="work-hero-content">
+      <div class="eyebrow eyebrow-light">Programs & Impact</div>
+      <h1 class="section-heading section-heading-light" style="font-size:clamp(2rem,4vw,3.5rem);">Where We Work,<br><em>What We Do</em></h1>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="cat-tabs">
+      <button class="cat-tab active" onclick="setTab(this)">All Programs</button>
+      <button class="cat-tab" onclick="setTab(this)"><img src="https://loremflickr.com/64/64/education" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Education</button>
+      <button class="cat-tab" onclick="setTab(this)"><img src="https://loremflickr.com/64/64/health" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Healthcare</button>
+      <button class="cat-tab" onclick="setTab(this)"><img src="https://loremflickr.com/64/64/plant" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Environment</button>
+      <button class="cat-tab" onclick="setTab(this)"><img src="https://loremflickr.com/64/64/relief" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Disaster Relief</button>
+    </div>
+
+    <div class="program-block">
+      <div class="prog-visual"><img src="media/img_6.jpg" alt="Digital Learning"/></div>
+      <div class="prog-text">
+        <span class="prog-cat-tag"><img src="https://loremflickr.com/64/64/education" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Education</span>
+        <div class="prog-title">Digital Learning Programme</div>
+        <p class="prog-desc">We partner with government schools to eliminate the digital divide through smart classrooms, trained teachers, and student devices. The programme reaches 200 schools across 8 districts in Tamil Nadu.</p>
+        <div class="prog-stats">
+          <div><div class="prog-stat-n">20,000+</div><div class="prog-stat-l">Students</div></div>
+          <div><div class="prog-stat-n">200</div><div class="prog-stat-l">Schools</div></div>
+          <div><div class="prog-stat-n">94%</div><div class="prog-stat-l">Attendance ↑</div></div>
+        </div>
+        <div class="progress-bar" style="height:6px; border-radius:99px;"><div class="progress-fill" style="width:78%"></div></div>
+        <div class="progress-meta" style="font-size:0.76rem; display:flex; justify-content:space-between; margin-top:0.4rem;"><span>₹39L raised</span><span>₹50L goal</span></div>
+      </div>
+    </div>
+
+    <div class="program-block reverse">
+      <div class="prog-text">
+        <span class="prog-cat-tag"><img src="https://loremflickr.com/64/64/health" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Healthcare</span>
+        <div class="prog-title">Mobile Health & Maternal Care</div>
+        <p class="prog-desc">Our fleet of 12 mobile clinics visits 180+ villages monthly, providing primary healthcare, vaccinations, and maternal support. We've assisted 8,000 safe deliveries and reduced under-5 mortality by 31% in covered areas.</p>
+        <div class="prog-stats">
+          <div><div class="prog-stat-n">12</div><div class="prog-stat-l">Mobile Clinics</div></div>
+          <div><div class="prog-stat-n">3,200</div><div class="prog-stat-l">Mothers</div></div>
+          <div><div class="prog-stat-n">180+</div><div class="prog-stat-l">Villages</div></div>
+        </div>
+      </div>
+      <div class="prog-visual"><img src="media/img_32.jpg" alt="Healthcare"/></div>
+    </div>
+
+    <div class="program-block">
+      <div class="prog-visual"><img src="media/img_19.jpg" alt="Clean Water"/></div>
+      <div class="prog-text">
+        <span class="prog-cat-tag"><img src="https://loremflickr.com/64/64/plant" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Environment</span>
+        <div class="prog-title">Clean Water & Sanitation</div>
+        <p class="prog-desc">Solar-powered water purification units, rainwater harvesting structures, and ODF village campaigns have brought clean water to 25,000 families who previously spent hours fetching contaminated water daily.</p>
+        <div class="prog-stats">
+          <div><div class="prog-stat-n">50</div><div class="prog-stat-l">Villages</div></div>
+          <div><div class="prog-stat-n">25,000</div><div class="prog-stat-l">Families</div></div>
+          <div><div class="prog-stat-n">100%</div><div class="prog-stat-l">ODF Status</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ GET INVOLVED ═══════════════════════ -->
+<div class="page" id="page-involved">
+  <div class="involved-hero">
+    <div class="involved-hero-img"></div>
+    <div class="involved-hero-overlay"></div>
+    <div class="involved-hero-content">
+      <div class="eyebrow eyebrow-light">Join Us</div>
+      <h1 class="section-heading section-heading-light" style="font-size:clamp(2rem,4vw,3.5rem);">Be the Change<br><em>Tamil Nadu Needs</em></h1>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="involve-cards">
+      <div class="inv-card">
+        <div class="inv-card-img"><img src="media/img_24.jpg" alt="Volunteer"/></div>
+        <div class="inv-card-overlay"></div>
+        <div class="inv-card-body"><span class="inv-card-icon"><img src="https://loremflickr.com/64/64/volunteer" alt="Volunteer" style="width:1.5em;height:1.5em;object-fit:cover;border-radius:50%;"></span><div class="inv-card-title">Volunteer</div><div class="inv-card-desc">Give your time and skills. Weekend visits, tutoring, or long-term field postings.</div></div>
+      </div>
+      <div class="inv-card">
+        <div class="inv-card-img"><img src="media/img_27.jpg" alt="Corporate"/></div>
+        <div class="inv-card-overlay"></div>
+        <div class="inv-card-body"><span class="inv-card-icon"><img src="https://loremflickr.com/64/64/partner" alt="Partner" style="width:1.5em;height:1.5em;object-fit:cover;border-radius:50%;"></span><div class="inv-card-title">Corporate Partner</div><div class="inv-card-desc">Align your CSR goals with our proven programs. Get impact reports and tax benefits.</div></div>
+      </div>
+      <div class="inv-card">
+        <div class="inv-card-img"><img src="media/img_1.jpg" alt="Careers"/></div>
+        <div class="inv-card-overlay"></div>
+        <div class="inv-card-body"><span class="inv-card-icon"><img src="https://loremflickr.com/64/64/career" alt="Careers" style="width:1.5em;height:1.5em;object-fit:cover;border-radius:50%;"></span><div class="inv-card-title">Join Our Team</div><div class="inv-card-desc">We're hiring passionate professionals for field, research, and operations roles.</div></div>
+      </div>
+    </div>
+
+    <div class="form-grid">
+      <div>
+        <div class="eyebrow">Volunteer</div>
+        <h2 class="section-heading" style="margin-bottom:1rem;">Apply to <em>Volunteer</em></h2>
+        <div class="divider-line"></div>
+        <div class="form-card">
+          <div class="fgroup"><label class="flabel">Full Name</label><input class="finput" type="text" placeholder="Your full name"/></div>
+          <div class="fgroup"><label class="flabel">Email Address</label><input class="finput" type="email" placeholder="your@email.com"/></div>
+          <div class="fgroup"><label class="flabel">Phone</label><input class="finput" type="tel" placeholder="+91 98765 43210"/></div>
+          <div class="fgroup"><label class="flabel">Area of Interest</label><select class="fselect"><option>Education & Teaching</option><option>Healthcare Support</option><option>Environment Projects</option><option>Communications</option><option>Fundraising</option></select></div>
+          <div class="fgroup"><label class="flabel">Availability</label><select class="fselect"><option>Weekends only</option><option>Weekdays (part-time)</option><option>Full-time (3+ months)</option><option>Remote / Online</option></select></div>
+          <div class="fgroup"><label class="flabel">Why volunteer with us?</label><textarea class="ftextarea" placeholder="Share your motivation..."></textarea></div>
+          <button class="btn-primary" style="width:100%;" onclick="showToast('✅ Application submitted! We\'ll be in touch within 3 working days.')">Submit Application</button>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Careers</div>
+        <h2 class="section-heading" style="margin-bottom:1rem;">Open <em>Positions</em></h2>
+        <div class="divider-line"></div>
+        <ul class="career-list">
+          <li class="career-item"><div><div class="career-title">Program Manager – Education</div><div class="career-dept">Programs</div><div class="career-type">Full-time · Chennai / Field</div></div><button class="career-btn" onclick="showToast('Opening application form...')">Apply</button></li>
+          <li class="career-item"><div><div class="career-title">Field Coordinator – Healthcare</div><div class="career-dept">Healthcare</div><div class="career-type">Full-time · North Tamil Nadu</div></div><button class="career-btn" onclick="showToast('Opening application form...')">Apply</button></li>
+          <li class="career-item"><div><div class="career-title">Communications & Social Media</div><div class="career-dept">Communications</div><div class="career-type">Full-time · Remote-friendly</div></div><button class="career-btn" onclick="showToast('Opening application form...')">Apply</button></li>
+          <li class="career-item"><div><div class="career-title">Finance & Compliance Officer</div><div class="career-dept">Finance</div><div class="career-type">Full-time · Chennai</div></div><button class="career-btn" onclick="showToast('Opening application form...')">Apply</button></li>
+          <li class="career-item"><div><div class="career-title">Internship – Research & M&E</div><div class="career-dept">Research</div><div class="career-type">6 months · Stipend provided</div></div><button class="career-btn" onclick="showToast('Opening application form...')">Apply</button></li>
+          <li class="career-item"><div><div class="career-title">Grant Writing Specialist</div><div class="career-dept">Fundraising</div><div class="career-type">Contract · Remote</div></div><button class="career-btn" onclick="showToast('Opening application form...')">Apply</button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="eyebrow">Partnerships</div>
+    <h2 class="section-heading" style="margin-bottom:0.5rem;">CSR Collaboration <em>Tiers</em></h2>
+    <div class="divider-line"></div>
+    <p class="section-para">Partner with us to meet your CSR mandate with certified, measurable impact. All partnerships include detailed reports and 80G receipts.</p>
+    <div class="csr-grid">
+      <div class="csr-card"><div class="csr-card-head"><div class="csr-tier">Supporter</div><div class="csr-amount">₹1L+</div><div class="csr-name">Silver Partner</div></div><div class="csr-card-body"><div class="csr-ben">Logo on website & reports</div><div class="csr-ben">Quarterly impact report</div><div class="csr-ben">80G tax certificate</div><div class="csr-ben">Volunteer days (5/year)</div></div></div>
+      <div class="csr-card csr-featured"><div class="csr-card-head"><div class="csr-tier">Most Popular</div><div class="csr-amount">₹5L+</div><div class="csr-name">Gold Partner</div></div><div class="csr-card-body"><div class="csr-ben">Named program sponsorship</div><div class="csr-ben">Monthly impact reports</div><div class="csr-ben">Leadership site visit</div><div class="csr-ben">Volunteer days (20/year)</div><div class="csr-ben">Co-branded campaign</div></div></div>
+      <div class="csr-card" style="background:var(--green-dark);"><div class="csr-card-head" style="background:rgba(255,255,255,0.06);"><div class="csr-tier" style="color:var(--amber-light)">Premium</div><div class="csr-amount" style="color:var(--amber)">₹25L+</div><div class="csr-name" style="color:#fff">Platinum Partner</div></div><div class="csr-card-body" style="background:transparent;"><div class="csr-ben" style="color:rgba(255,255,255,0.65); border-color:rgba(255,255,255,0.1)">Dedicated program co-design</div><div class="csr-ben" style="color:rgba(255,255,255,0.65); border-color:rgba(255,255,255,0.1)">Board-level engagement</div><div class="csr-ben" style="color:rgba(255,255,255,0.65); border-color:rgba(255,255,255,0.1)">Custom impact measurement</div><div class="csr-ben" style="color:rgba(255,255,255,0.65); border-color:rgba(255,255,255,0.1)">National media co-branding</div><div class="csr-ben" style="color:rgba(255,255,255,0.65); border-color:rgba(255,255,255,0.1)">Unlimited volunteer days</div></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ DONATE ═══════════════════════ -->
+<div class="page" id="page-donate">
+  <div class="donate-hero">
+    <div class="donate-hero-img"></div>
+    <div class="donate-hero-overlay"></div>
+    <div class="donate-hero-content">
+      <div class="eyebrow" style="display:inline-flex; align-items:center; gap:0.6rem; font-size:0.73rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.8); margin-bottom:0.8rem;">Make a Difference</div>
+      <h1 class="section-heading section-heading-light" style="font-size:clamp(2rem,4vw,3.5rem);">Your Gift <em>Transforms Lives</em></h1>
+      <p style="color:rgba(255,255,255,0.85); font-size:1rem;">92% of every rupee goes directly to our programs. Certified transparent.</p>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="donate-grid">
+      <div>
+        <div class="eyebrow">Give Now</div>
+        <h2 class="section-heading" style="margin-bottom:1rem;">Choose How to <em>Give</em></h2>
+        <div class="divider-line"></div>
+        <div class="donate-card">
+          <div class="freq-row">
+            <button class="freq-btn active" onclick="setFreq(this)">One-Time</button>
+            <button class="freq-btn" onclick="setFreq(this)">Monthly</button>
+            <button class="freq-btn" onclick="setFreq(this)">Annual</button>
+          </div>
+          <div class="amt-grid">
+            <button class="amt-btn" onclick="setAmt(this)">₹500<small>School supplies · 1 child</small></button>
+            <button class="amt-btn active" onclick="setAmt(this)">₹1,000<small>Health camp · 1 person</small></button>
+            <button class="amt-btn" onclick="setAmt(this)">₹2,500<small>Clean water unit</small></button>
+            <button class="amt-btn" onclick="setAmt(this)">₹5,000<small>Monthly child stipend</small></button>
+            <button class="amt-btn" onclick="setAmt(this)">₹10,000<small>Sponsor a child · 1 yr</small></button>
+            <button class="amt-btn" onclick="setAmt(this)">₹25,000<small>Fund a classroom</small></button>
+          </div>
+          <input class="custom-inp" type="number" placeholder="Or enter a custom amount (₹)"/>
+          <div class="fgroup"><label class="flabel">Full Name</label><input class="finput" type="text" placeholder="Your full name"/></div>
+          <div class="fgroup"><label class="flabel">Email</label><input class="finput" type="email" placeholder="your@email.com"/></div>
+          <div class="fgroup"><label class="flabel">Phone</label><input class="finput" type="tel" placeholder="+91 98765 43210"/></div>
+          <div style="margin-bottom:1.2rem;"><div class="flabel" style="margin-bottom:0.6rem;">Payment Method</div>
+            <div class="pay-row">
+              <button class="pay-btn active" onclick="setPay(this)"><img src="https://loremflickr.com/64/64/card" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Card</button>
+              <button class="pay-btn" onclick="setPay(this)"><img src="https://loremflickr.com/64/64/phone" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> UPI</button>
+              <button class="pay-btn" onclick="setPay(this)"><img src="https://loremflickr.com/64/64/bank" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> NetBanking</button>
+              <button class="pay-btn" onclick="setPay(this)">PayPal</button>
+            </div>
+          </div>
+          <button class="btn-primary" style="width:100%; padding:1rem; font-size:0.9rem; border-radius:10px;" onclick="showToast('🎉 Thank you! Your donation is being processed securely.')">Donate Securely →</button>
+          <div class="secure-note"><img src="https://loremflickr.com/64/64/lock" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> 256-bit SSL · GDPR Compliant · PCI DSS Secure</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="donate-info-card">
+          <div class="dinfo-title">What Your Donation Does</div>
+          <div class="dinfo-row"><div class="dinfo-icon"><img src="https://loremflickr.com/64/64/education" style="width:1.2em;height:1.2em;object-fit:cover;border-radius:50%;"></div><div class="dinfo-text">School supplies for 2 children</div><div class="dinfo-amt">₹500</div></div>
+          <div class="dinfo-row"><div class="dinfo-icon"><img src="https://loremflickr.com/64/64/health" style="width:1.2em;height:1.2em;object-fit:cover;border-radius:50%;"></div><div class="dinfo-text">Full health camp for 1 person</div><div class="dinfo-amt">₹1,000</div></div>
+          <div class="dinfo-row"><div class="dinfo-icon"><img src="https://loremflickr.com/64/64/plant" style="width:1.2em;height:1.2em;object-fit:cover;border-radius:50%;"></div><div class="dinfo-text">Plants 50 trees + 1-yr maintenance</div><div class="dinfo-amt">₹2,500</div></div>
+          <div class="dinfo-row"><div class="dinfo-icon"><img src="https://loremflickr.com/64/64/mother" style="width:1.2em;height:1.2em;object-fit:cover;border-radius:50%;"></div><div class="dinfo-text">Maternal care for 1 month</div><div class="dinfo-amt">₹5,000</div></div>
+          <div class="dinfo-row"><div class="dinfo-icon"><img src="https://loremflickr.com/64/64/graduate" style="width:1.2em;height:1.2em;object-fit:cover;border-radius:50%;"></div><div class="dinfo-text">Child's full year education</div><div class="dinfo-amt">₹10,000</div></div>
+        </div>
+        <div class="tax-card" style="margin-bottom:1.5rem;">
+          <div class="tax-title"><img src="https://loremflickr.com/64/64/tax" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> Tax Benefits for Donors</div>
+          <div class="tax-text">All donations eligible for 50% deduction under Section 80G of the Income Tax Act. Foreign donations accepted via FCRA. An automated receipt and 80G certificate will be emailed within 24 hours.</div>
+        </div>
+        <div class="donate-info-card">
+          <div class="dinfo-title">Fund Utilisation</div>
+          <div style="margin-top:0.5rem;">
+            <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:0.3rem;"><span>Program Delivery</span><strong style="color:var(--amber)">92%</strong></div>
+            <div class="progress-bar" style="height:8px; border-radius:99px; margin-bottom:1rem;"><div class="progress-fill" style="width:92%"></div></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:0.3rem;"><span>Administration</span><strong>5%</strong></div>
+            <div class="progress-bar" style="height:8px; border-radius:99px; margin-bottom:1rem;"><div class="progress-fill" style="width:5%; background:var(--text-light)"></div></div>
+            <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:0.3rem;"><span>Fundraising</span><strong>3%</strong></div>
+            <div class="progress-bar" style="height:8px; border-radius:99px;"><div class="progress-fill" style="width:3%; background:var(--border)"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ NEWS ═══════════════════════ -->
+<div class="page" id="page-news">
+  <div class="news-hero">
+    <div class="news-hero-img"></div>
+    <div class="news-hero-overlay"></div>
+    <div class="news-hero-content">
+      <div class="eyebrow eyebrow-light">Stories & Updates</div>
+      <h1 class="section-heading section-heading-light" style="font-size:clamp(2rem,4vw,3.5rem);">News, Field Reports<br>&amp; <em>Media</em></h1>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="news-grid">
+      <div class="news-card"><div class="news-card-img"><img src="media/img_16.jpg" alt="Digital classrooms"/></div><div class="news-card-body"><div class="news-cat">Education</div><div class="news-title">200 Schools Connected: Digital Classrooms Milestone Reached</div><div class="news-excerpt">Valam Trust completes Phase 1 of its digital learning programme, transforming daily learning for 20,000 students across 8 Tamil Nadu districts.</div><div class="news-meta"><span>March 28, 2024</span><span>Field Report</span></div></div></div>
+      <div class="news-card"><div class="news-card-img"><img src="media/img_25.jpg" alt="Healthcare"/></div><div class="news-card-body"><div class="news-cat">Healthcare</div><div class="news-title">Mobile Clinics Cross 1 Lakh Patient Consultations in 2024</div><div class="news-excerpt">Our fleet of 12 mobile health units reached a landmark figure, with growing demand for maternal and child health services in tribal belts.</div><div class="news-meta"><span>March 15, 2024</span><span>Milestone</span></div></div></div>
+      <div class="news-card"><div class="news-card-img"><img src="media/img_14.jpg" alt="Sanitation"/></div><div class="news-card-body"><div class="news-cat">Environment</div><div class="news-title">50 Villages Achieve Open Defecation Free Status</div><div class="news-excerpt">A coordinated campaign helped 50 villages achieve ODF status ahead of schedule through behaviour change and community mobilisation.</div><div class="news-meta"><span>February 20, 2024</span><span>Campaign Update</span></div></div></div>
+      <div class="news-card"><div class="news-card-img"><img src="media/img_27.jpg" alt="Partnership"/></div><div class="news-card-body"><div class="news-cat">Partnership</div><div class="news-title">Valam Trust Partners with NASSCOM Foundation for Digital Literacy</div><div class="news-excerpt">A new MoU extends digital literacy training to 5,000 young adults in tier-3 cities across Tamil Nadu and Andhra Pradesh.</div><div class="news-meta"><span>January 10, 2024</span><span>Partnership</span></div></div></div>
+      <div class="news-card"><div class="news-card-img"><img src="media/img_20.jpg" alt="Gala"/></div><div class="news-card-body"><div class="news-cat">Event</div><div class="news-title">Annual Gala Raises ₹1.2 Crore in a Single Evening</div><div class="news-excerpt">The 15th Anniversary Gala saw 400 patrons raise ₹1.2 Crore — the largest single-event fundraise in the Trust's history.</div><div class="news-meta"><span>December 5, 2023</span><span>Event</span></div></div></div>
+      <div class="news-card"><div class="news-card-img"><img src="media/img_5.jpg" alt="Award"/></div><div class="news-card-body"><div class="news-cat">Recognition</div><div class="news-title">Anandhi Named Among India's 50 Most Influential Social Leaders</div><div class="news-excerpt">Our founder and CEO recognised by Social Impact India for her 15-year commitment to rural transformation and community-led development.</div><div class="news-meta"><span>November 18, 2023</span><span>Award</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="eyebrow">Gallery</div>
+    <h2 class="section-heading" style="margin-bottom:2rem;">Photos from the <em>Field</em></h2>
+    <div class="gallery-grid">
+      <div class="gal-item"><img src="media/img_0.jpg" alt="School"/></div>
+      <div class="gal-item"><img src="media/img_26.jpg" alt="Healthcare"/></div>
+      <div class="gal-item"><img src="media/img_15.jpg" alt="Nature"/></div>
+      <div class="gal-item"><img src="media/img_31.jpg" alt="Community"/></div>
+      <div class="gal-item"><img src="media/img_4.jpg" alt="Volunteers"/></div>
+      <div class="gal-item"><img src="media/img_29.jpg" alt="Water"/></div>
+      <div class="gal-item"><img src="media/img_28.jpg" alt="Team"/></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="contact-hero">
+    <div class="contact-hero-img"></div>
+    <div class="contact-hero-overlay"></div>
+    <div class="contact-hero-content">
+      <div class="eyebrow eyebrow-light">Get in Touch</div>
+      <h1 class="section-heading section-heading-light" style="font-size:clamp(2rem,4vw,3.5rem);">We'd Love to<br><em>Hear From You</em></h1>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="contact-grid">
+      <div>
+        <div class="cinfo-block"><div class="cinfo-label">Head Office</div><div class="cinfo-text">Valam Trust<br>3rd Floor, Anna Nagar Tower<br>Chennai — 600 040<br>Tamil Nadu, India</div></div>
+        <div class="cinfo-block"><div class="cinfo-label">Phone</div><div class="cinfo-text">+91 44 4567 8900<br>Mon–Fri, 9:30 AM – 6:00 PM IST</div></div>
+        <div class="cinfo-block"><div class="cinfo-label">Email</div><div class="cinfo-text">hello@valamtrust.org<br>donate@valamtrust.org<br>media@valamtrust.org</div></div>
+        <div class="map-box"><div class="map-icon"><img src="https://loremflickr.com/64/64/map" alt="Map" style="width:1.2em;height:1.2em;object-fit:cover;border-radius:50%;"></div><div>Valam Trust, Anna Nagar<br>Chennai, Tamil Nadu</div><div style="font-size:0.75rem; color:var(--green-light); margin-top:0.3rem;">[Google Maps integration here]</div></div>
+        <div class="cinfo-block"><div class="cinfo-label">Follow Us</div>
+          <div class="social-row" style="margin-top:0.5rem;">
+            <a class="soc-btn" title="Instagram"><img src="https://loremflickr.com/64/64/instagram" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></a>
+            <a class="soc-btn" title="LinkedIn"><img src="https://loremflickr.com/64/64/linkedin" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></a>
+            <a class="soc-btn" title="Facebook"><img src="https://loremflickr.com/64/64/facebook" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></a>
+            <a class="soc-btn" title="Twitter"><img src="https://loremflickr.com/64/64/twitter" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></a>
+            <a class="soc-btn" title="YouTube"><img src="https://loremflickr.com/64/64/youtube" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <div class="eyebrow">Send a Message</div>
+        <h2 class="section-heading" style="margin-bottom:1.5rem; font-size:1.6rem;">We Reply Within <em>2 Days</em></h2>
+        <div class="fgroup"><label class="flabel">Your Name</label><input class="finput" type="text" placeholder="Full name"/></div>
+        <div class="fgroup"><label class="flabel">Email</label><input class="finput" type="email" placeholder="your@email.com"/></div>
+        <div class="fgroup"><label class="flabel">Subject</label><select class="fselect"><option>General Inquiry</option><option>Donation Query</option><option>Media / Press</option><option>Partnership / CSR</option><option>Volunteering</option><option>Careers</option></select></div>
+        <div class="fgroup"><label class="flabel">Message</label><textarea class="ftextarea" placeholder="How can we help you?"></textarea></div>
+        <button class="btn-primary" style="width:100%;" onclick="showToast('✅ Message sent! We\'ll reply within 2 working days.')">Send Message →</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-logo"><span>Valam</span> Trust</span>
+      <div class="footer-tagline">வளம் · Empowering communities through education, healthcare, and sustainable development — one life at a time across Tamil Nadu.</div>
+    </div>
+    <div><div class="footer-col-title">Navigate</div><ul class="footer-links"><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('about')">About Us</a></li><li><a onclick="showPage('work')">Our Work</a></li><li><a onclick="showPage('involved')">Get Involved</a></li><li><a onclick="showPage('news')">News</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
+    <div><div class="footer-col-title">Programs</div><ul class="footer-links"><li><a>Education</a></li><li><a>Healthcare</a></li><li><a>Environment</a></li><li><a>Disaster Relief</a></li><li><a>Skill Development</a></li></ul></div>
+    <div><div class="footer-col-title">Legal</div><ul class="footer-links"><li><a>80G Certificate</a></li><li><a>FCRA Registration</a></li><li><a>Annual Reports</a></li><li><a>Privacy Policy</a></li><li><a>Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-text">© 2024 Valam Trust. Registered under the Indian Trusts Act. CIN: U85300TN2009NPT123456</div>
+    <div class="footer-ssl"><img src="https://loremflickr.com/64/64/lock" style="width:1em;height:1em;object-fit:cover;border-radius:50%;vertical-align:-0.2em;margin-right:0.3em;"> SSL Secure · GDPR Compliant</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
